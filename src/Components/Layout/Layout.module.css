@@ -11,4 +11,5 @@
 
 .body {
   min-height: calc(100vh - 116px);
+  overflow-x: hidden;
 }
