@@ -38,7 +38,7 @@
   letter-spacing: var(--unnamed-character-spacing-0);
   color: var(--secondary-0a7e32);
   text-align: left;
-  font: normal normal normal 20px/47px Millik;
+  font: normal normal normal 16px/47px Millik;
   letter-spacing: 0px;
   color: #0a7e32;
   opacity: 1;
@@ -105,4 +105,116 @@
   background: var(--tertiary-yellow-f5f5de) 0% 0% no-repeat padding-box;
   background: #f5f5de 0% 0% no-repeat padding-box;
   text-align: center;
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .topSection {
+    padding: 1rem;
+    width: 100%;
+  }
+
+  .communitySection {
+    width: 100%;
+    padding: 0rem;
+  }
+
+  .communitySection > div {
+    gap: 0.5rem;
+
+    font: normal normal normal 16px/20px Millik;
+  }
+
+  .communitySection > div > img {
+    width: 48px;
+    height: 48px;
+  }
+
+  .routesSection {
+    display: flex;
+    margin-top: 2rem;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .routes {
+    margin-bottom: 1.5rem;
+  }
+
+  .routes > h4 {
+    font: normal normal normal 24px/24px Millik;
+  }
+
+  .otherOptions > a {
+    margin-top: 1rem;
+  }
+
+  .notPriority {
+    font: var(--unnamed-font-style-normal) normal
+      var(--unnamed-font-weight-normal) var(--unnamed-font-size-16) /
+      var(--unnamed-line-spacing-20) var(--unnamed-font-family-red-hat-display);
+    font: normal normal normal 14px/16px "Red Hat Display";
+  }
+
+  .priority {
+    font: var(--unnamed-font-style-normal) normal bold
+      var(--unnamed-font-size-16) / var(--unnamed-line-spacing-24)
+      var(--unnamed-font-family-red-hat-display);
+    font: normal normal bold 14px/16px "Red Hat Display";
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .topSection {
+    padding: 1rem;
+    width: 100%;
+  }
+
+  .communitySection {
+    width: 100%;
+    padding: 0rem;
+  }
+
+  .communitySection > div {
+    gap: 0.5rem;
+
+    font: normal normal normal 16px/20px Millik;
+  }
+
+  .communitySection > div > img {
+    width: 48px;
+    height: 48px;
+  }
+
+  .routesSection {
+    display: flex;
+    margin-top: 2rem;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .routes {
+    margin-bottom: 1.5rem;
+  }
+
+  .routes > h4 {
+    font: normal normal normal 24px/24px Millik;
+  }
+
+  .otherOptions > a {
+    margin-top: 1rem;
+  }
+
+  .notPriority {
+    font: var(--unnamed-font-style-normal) normal
+      var(--unnamed-font-weight-normal) var(--unnamed-font-size-16) /
+      var(--unnamed-line-spacing-20) var(--unnamed-font-family-red-hat-display);
+    font: normal normal normal 14px/16px "Red Hat Display";
+  }
+
+  .priority {
+    font: var(--unnamed-font-style-normal) normal bold
+      var(--unnamed-font-size-16) / var(--unnamed-line-spacing-24)
+      var(--unnamed-font-family-red-hat-display);
+    font: normal normal bold 14px/16px "Red Hat Display";
+  }
 }

@@ -53,3 +53,39 @@
   border-radius: 50%;
   cursor: pointer;
 }
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .container {
+    padding: 7rem 1rem 1rem 1rem;
+  }
+
+  .staffSection {
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .staffSection::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    padding: 7rem 1rem 1rem 1rem;
+  }
+
+  .staffSection {
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .staffSection::-webkit-scrollbar {
+    display: none;
+  }
+}

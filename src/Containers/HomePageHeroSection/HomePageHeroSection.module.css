@@ -56,7 +56,7 @@
   flex: 1;
 }
 
-.buttonSection > button:nth-child(1) {
+.buttonSection > button:nth-child(2) {
   flex: 2;
 }
 
@@ -68,4 +68,90 @@
 .imageSection > img {
   height: 100%;
   width: 100%;
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .container {
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 1rem;
+  }
+
+  .textSection {
+    flex-basis: 100%;
+    padding-left: 0px;
+  }
+
+  .textSection > h1 {
+    font: normal normal normal 30px/40px Millik;
+    margin-bottom: 1rem;
+  }
+
+  .textSection > p {
+    font: normal normal normal 16px/20px "Red Hat Display";
+  }
+
+  .textSection > p > span {
+    color: var(--unnamed-color-000000);
+  }
+
+  .buttonSection {
+    gap: 16px;
+    margin-top: 1.5rem;
+  }
+
+  .buttonSection > button:nth-child(1) {
+    flex-basis: 50%;
+  }
+
+  .buttonSection > button:nth-child(2) {
+    flex-basis: 50%;
+  }
+
+  .container > .imageSection {
+    flex: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 1rem;
+  }
+
+  .textSection {
+    flex-basis: 100%;
+    padding-left: 0px;
+  }
+
+  .textSection > h1 {
+    font: normal normal normal 30px/40px Millik;
+    margin-bottom: 1rem;
+  }
+
+  .textSection > p {
+    font: normal normal normal 16px/20px "Red Hat Display";
+  }
+
+  .textSection > p > span {
+    color: var(--unnamed-color-000000);
+  }
+
+  .buttonSection {
+    gap: 16px;
+    margin-top: 1.5rem;
+  }
+
+  .buttonSection > button:nth-child(1) {
+    flex-basis: 50%;
+  }
+
+  .buttonSection > button:nth-child(2) {
+    flex-basis: 50%;
+  }
+
+  .container > .imageSection {
+    flex: 100%;
+  }
 }

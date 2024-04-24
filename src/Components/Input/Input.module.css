@@ -12,11 +12,14 @@
 
 .container > label {
   color: var(--grey);
-  font-family: Millik;
+  font-family: "Helvetica Now Display";
   font-size: 18px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 27px;
+  text-align: left;
+  width: 100%;
+  display: block;
 }
 
 .container > span:nth-child(2) {
@@ -58,10 +61,8 @@
   font: normal normal normal 16px/32px "Helvetica Now Display";
   letter-spacing: 0px;
   color: #585858;
-  text-transform: capitalize;
   opacity: 1;
   margin: 5px 0;
-  border-radius: 5px;
   transition: all 0.3s ease-in-out;
   border-radius: 100px;
   opacity: 1;
@@ -89,7 +90,7 @@
     var(--unnamed-line-spacing-32) Helvetica Now Display;
   letter-spacing: var(--unnamed-character-spacing-0);
   text-align: left;
-  font: normal normal normal 16px/32px Helvetica Now Display;
+  font: normal normal normal 16px/32px "Helvetica Now Display";
   letter-spacing: 0px;
   color: #585858;
   text-transform: capitalize;
@@ -118,10 +119,10 @@
 @media screen and (min-width: 767px) and (max-width: 1023px) {
   .input > input {
     padding: 12px;
-    font-family: Millik;
+    font-family: "Helvetica Now Display";
     font-size: 14px;
     line-height: 23px;
-    border-radius: 5px;
+    border-radius: 100px;
   }
 
   .container > label {
@@ -142,10 +143,10 @@
 @media screen and (max-width: 767px) and (max-width: 1023px) {
   .input > input {
     padding: 12px;
-    font-family: Millik;
+    font-family: "Helvetica Now Display";
     font-size: 14px;
     line-height: 23px;
-    border-radius: 5px;
+    border-radius: 100px;
   }
 
   .container > label {

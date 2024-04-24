@@ -32,3 +32,51 @@
   color: #000000;
   text-transform: uppercase;
 }
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .container {
+    justify-content: space-between;
+    padding: 1rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .container > div {
+    text-align: center;
+    flex-basis: 100%;
+  }
+
+  .container > div > h4 {
+    color: var(--primary-335f32);
+    font: normal normal normal 24px/24px Millik;
+    color: #335f32;
+  }
+
+  .container > div > p {
+    font: normal normal 600 14px/32px "Red Hat Display";
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    padding: 1rem;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  .container > div {
+    text-align: center;
+    flex: 1;
+    flex-basis: 100%;
+  }
+
+  .container > div > h4 {
+    color: var(--primary-335f32);
+    font: normal normal normal 24px/24px Millik;
+    color: #335f32;
+  }
+
+  .container > div > p {
+    font: normal normal 600 14px/32px "Red Hat Display";
+  }
+}

@@ -22,7 +22,7 @@
 .routesSection {
   display: flex;
   align-items: center;
-  gap: 68px;
+  gap: 48px;
 }
 
 .routesSection > a {
@@ -43,9 +43,19 @@
   flex-direction: column;
 }
 
+.routesSection > a > span:nth-child(1) {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
 .active > span:nth-child(1) {
   font: var(--unnamed-font-style-normal) normal bold var(--unnamed-font-size-16) /
     60px var(--unnamed-font-family-red-hat-display);
+
+  overflow: hidden;
 }
 
 .routesSection > a > span:nth-child(2) {
@@ -115,4 +125,78 @@
   background: var(--primary-335f32) 0% 0% no-repeat padding-box;
   background: #335f32 0% 0% no-repeat padding-box;
   color: var(--white-ffffff);
+}
+
+.hamburgerMenu {
+  display: none;
+  color: #335f32;
+  margin-left: auto;
+}
+
+.sideNav {
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 20;
+  background-color: var(--white);
+  overflow: hidden;
+  width: 0;
+  transition: 0.3s;
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .container {
+    padding: 1rem;
+    height: 80px;
+    gap: 1rem;
+  }
+
+  .container > img:nth-child(1) {
+    width: 39px;
+    height: 36px;
+  }
+
+  .inputSection {
+    display: none;
+  }
+
+  .routesSection {
+    display: none;
+  }
+
+  .hamburgerMenu {
+    display: block;
+  }
+  .notificationsSection {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    padding: 1rem;
+    height: 80px;
+    gap: 1rem;
+  }
+
+  .container > img:nth-child(1) {
+    width: 39px;
+    height: 36px;
+  }
+
+  .inputSection {
+    display: none;
+  }
+
+  .routesSection {
+    display: none;
+  }
+
+  .hamburgerMenu {
+    display: block;
+  }
+  .notificationsSection {
+    display: none;
+  }
 }

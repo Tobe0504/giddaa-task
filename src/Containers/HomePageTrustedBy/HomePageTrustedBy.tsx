@@ -1,5 +1,4 @@
 import classes from "./HomePageTrustedBy.module.css";
-import underline from "../../Assets/Images/underline.svg";
 import vimeo from "../../Assets/Images/vimeo.svg";
 import chrome from "../../Assets/Images/chrome.svg";
 import dropbox from "../../Assets/Images/dropbox.svg";

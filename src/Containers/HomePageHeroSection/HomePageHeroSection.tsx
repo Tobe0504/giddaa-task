@@ -1,8 +1,11 @@
 import Button from "../../Components/Button/Button";
 import classes from "./HomePageHeroSection.module.css";
 import heroSection from "../../Assets/Images/heroSection.png";
+import { useNavigate } from "react-router-dom";
 
 const HomePageHeroSection = () => {
+  // Router
+  const navigate = useNavigate();
   return (
     <section className={classes.container}>
       <div className={classes.textSection}>
@@ -17,7 +20,13 @@ const HomePageHeroSection = () => {
           payment options directly from top developers and banks.
         </p>
         <div className={classes.buttonSection}>
-          <Button>Find a Home</Button>
+          <Button
+            onClick={() => {
+              navigate("/sign-in");
+            }}
+          >
+            Find a Home
+          </Button>
           <Button type="secondary">10,000 People Have Seen This</Button>
         </div>
       </div>

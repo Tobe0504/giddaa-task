@@ -4,11 +4,30 @@ import Input from "../../Components/Input/Input";
 import { headerNavItems } from "../../Utilities/navitems";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
+import HeaderSideNav from "../HeaderSideNav/HeaderSideNav";
+import MenuIcon from "@mui/icons-material/Menu";
+import { useRef } from "react";
 
 const Header = () => {
   //   Router
   const location = useLocation();
   const navigate = useNavigate();
+
+  // Refs
+  const sideNav = useRef<HTMLDivElement>(null);
+
+  // Utils
+  const openSideNav = () => {
+    if (sideNav.current) {
+      sideNav.current.style.width = "100%";
+    }
+  };
+
+  const closeSideNav = () => {
+    if (sideNav.current) {
+      sideNav.current.style.width = "0%";
+    }
+  };
 
   return (
     <section className={classes.container}>
@@ -18,7 +37,7 @@ const Header = () => {
       </div>
 
       <div className={classes.routesSection}>
-        {headerNavItems.map((navItem) => {
+        {headerNavItems.map((navItem, i) => {
           return (
             <Link
               to={navItem?.route}
@@ -27,6 +46,7 @@ const Header = () => {
                   ? classes.active
                   : classes.inActive
               }
+              key={i}
             >
               <span> {navItem?.title}</span>
               <span></span>
@@ -52,6 +72,14 @@ const Header = () => {
           }}
         />
         <span>2</span>
+      </div>
+
+      <div className={classes.hamburgerMenu} onClick={openSideNav}>
+        <MenuIcon />
+      </div>
+
+      <div className={classes.sideNav} ref={sideNav}>
+        <HeaderSideNav closeSideNav={closeSideNav} isHome />
       </div>
     </section>
   );

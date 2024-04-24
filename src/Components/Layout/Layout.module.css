@@ -10,6 +10,26 @@
 }
 
 .body {
-  min-height: calc(100vh - 116px);
+  height: calc(100vh - 116px);
   overflow-x: hidden;
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .header {
+    height: 80px;
+  }
+
+  .body {
+    min-height: calc(100vh - 80px);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    height: 80px;
+  }
+
+  .body {
+    min-height: calc(100vh - 80px);
+  }
 }
