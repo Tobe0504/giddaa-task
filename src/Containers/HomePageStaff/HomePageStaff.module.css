@@ -85,6 +85,11 @@
     scrollbar-width: none;
   }
 
+  .staffSection > div {
+    flex-basis: 100%;
+    flex-shrink: 0;
+  }
+
   .staffSection::-webkit-scrollbar {
     display: none;
   }

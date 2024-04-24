@@ -3,7 +3,7 @@
   display: inline-block;
 }
 
-.container > h4 {
+.container {
   letter-spacing: var(--unnamed-character-spacing-0);
   color: var(--primary-335f32);
   text-align: left;

@@ -5,6 +5,7 @@
   background-origin: border-box;
   height: 100vh;
   position: relative;
+  transition: background-image 0.3s ease-in-out;
 }
 
 .container > form {

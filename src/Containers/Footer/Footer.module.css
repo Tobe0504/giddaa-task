@@ -125,8 +125,8 @@
   }
 
   .communitySection > div > img {
-    width: 48px;
-    height: 48px;
+    width: 30px;
+    height: 30px;
   }
 
   .routesSection {
@@ -171,18 +171,17 @@
 
   .communitySection {
     width: 100%;
-    padding: 0rem;
+    padding: 1rem;
   }
 
   .communitySection > div {
     gap: 0.5rem;
-
-    font: normal normal normal 16px/20px Millik;
+    font: normal normal normal 14px/15px Millik;
   }
 
   .communitySection > div > img {
-    width: 48px;
-    height: 48px;
+    width: 30px;
+    height: 30px;
   }
 
   .routesSection {

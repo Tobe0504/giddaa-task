@@ -3,6 +3,8 @@
   padding: 2rem 0;
   overflow-y: auto;
   height: 100%;
+  position: relative;
+  z-index: 20;
 }
 
 .close {

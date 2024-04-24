@@ -138,7 +138,7 @@
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 20;
+  z-index: 4;
   background-color: var(--white);
   overflow: hidden;
   width: 0;

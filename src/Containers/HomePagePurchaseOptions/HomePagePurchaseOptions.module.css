@@ -299,10 +299,11 @@
   }
 
   .container > p {
-    font: normal normal 600 16px/20px "Red Hat Display";
+    font: normal normal 600 16px/25px "Red Hat Display";
     margin-bottom: 1rem;
     width: 100%;
     margin: 1rem auto 1rem auto;
+    text-align: left;
   }
 
   .paymentPlans {
